@@ -11,7 +11,7 @@ mkswap /dev/sda2
 echo "Formatiere /dev/nvme0n1p7 mit ext4..."
 mkfs.ext4 /dev/sda3
 echo "Mounten von /dev/nvme0n1p7 nach /mnt..."
-mount /dev/sda3/mnt
+mount /dev/sda3 /mnt
 echo "Mounten von /dev/nvme0n1p5 nach /mnt/boot..."
 mount --mkdir /dev/sda1 /mnt/boot
 echo "Aktiviere Swap auf /dev/nvme0n1p6..."
